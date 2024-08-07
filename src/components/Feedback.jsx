@@ -10,7 +10,7 @@ function Feedback({avatar, name, comment}) {
 
       <div className='flex items-center gap-3 mb-2'>
       <div className='text-4xl'>{avatar}</div>
-      <div className='text-white text-xl font-semibold'>{name}</div>
+      <div className='text-white sm:text-xl text-lg font-semibold'>{name}</div>
       </div>
 
         <Rating
@@ -21,7 +21,7 @@ function Feedback({avatar, name, comment}) {
           }}
         />
       
-      <div className='text-neutral-400'>{comment}</div>
+      <div className='text-neutral-400 text-sm'>{comment}</div>
       <div className='bg-neutral-700 width-[90%] h-[.1px] mt-3'></div>
     </div>
   );

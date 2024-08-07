@@ -15,6 +15,7 @@ function Header() {
                     <input type="text" placeholder="Search" className='font-semibold ml-2 mb-1 border-0 outline-none bg-transparent placeholder:text-[12px]' />
                 </div>
                 <div className="flex items-center">
+                    <div className='sm:flex hidden'>
                     <div className="flex items-center mr-[20px] relative">
                         <LanguageOutlinedIcon className="text-[20px]" />
                         English
@@ -32,6 +33,7 @@ function Header() {
                     <div className="flex items-center mr-[20px] relative">
                         <NotificationsNoneOutlinedIcon className="text-[20px]" />
                         <div className="w-[15px] h-[15px] bg-blue-500 text-white rounded-full flex items-center justify-center text-[10px] font-bold absolute top-[-5px] right-[-5px]">1</div>
+                    </div>
                     </div>
                     <div className="flex items-center mr-[20px] relative">
                         <ListOutlinedIcon className="text-[20px]" />

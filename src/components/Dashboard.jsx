@@ -13,13 +13,13 @@ function Dashboard() {
   return (
     <>
       {/* Dashboard */}
-      <div className="text-2xl m-5  text-white font-semibold">Dashboard</div>
+      <div className="text-2xl sm:m-5 m-3  text-white font-semibold">Dashboard</div>
 
       {/* widgets-container */}
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col sm:gap-10 gap-5">
         {/* 1st row */}
-        <div className="flex sm:flex-row flex-col mx-10 gap-10 ">
-          <div className=" sm:w-[70%] w-full sm:flex-nowrap flex-wrap flex sm:flex-row  gap-5 ">
+        <div className="flex sm:flex-row flex-col sm:mx-10 mx-5 sm:gap-10 gap-5 ">
+          <div className=" sm:w-[70%] w-full flex sm:flex-nowrap flex-wrap  sm:flex-row gap-5 ">
             {widgetData.map((data, index) => (
               <Widget
                 key={index}
@@ -38,7 +38,7 @@ function Dashboard() {
           </div>
         </div>
         {/* 2nd row */}
-        <div className="flex sm:flex-row flex-col mx-10 gap-10 ">
+        <div className="flex sm:flex-row flex-col sm:mx-10 mx-5 sm:gap-10 gap-5 ">
           <div className=" sm:w-[70%] w-full flex gap-5 ">
             <Chart />
           </div>
@@ -57,7 +57,7 @@ function Dashboard() {
         </div>
 
         {/* 3rd row */}
-        <div className="flex sm:flex-row flex-col mx-10 gap-10 ">
+        <div className="flex sm:flex-row flex-col sm:mx-10 mx-5 sm:gap-10 gap-5 ">
           <div className="bg-[#202028] sm:w-[70%] w-full px-8 py-5 gap-5 rounded-md">
             <div className="text-white bg-[#202028]  text-3xl font-semibold">
               Recent Orders
@@ -65,8 +65,8 @@ function Dashboard() {
             <RecentOrders />
           </div>
           <div className="bg-[#202028] sm:w-[30%] w-full rounded-md ">
-            <div className="text-white m-5 text-3xl font-semibold">
-              Customer's Feedback
+            <div className="text-white m-5 sm:text-3xl text-2xl font-semibold">
+              Customer's Feedback 
             </div>
             {FeedbackData.map((data, index) => (
               <Feedback

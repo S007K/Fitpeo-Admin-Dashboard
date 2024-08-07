@@ -5,7 +5,7 @@ function Widget({ icon, title, number, arrow, percent, color, textColor }) {
     const dataStyles = `text-${textColor}-500`;
 
     return (
-        <div className=" sm:w-[20%] w-[30%] p-4 bg-[#202028] rounded-md flex flex-col ">
+        <div className=" sm:w-[20%] w-[46%] p-4 bg-[#202028] rounded-md flex flex-col ">
         <div className={iconStyles}>
           {icon}
         </div>
